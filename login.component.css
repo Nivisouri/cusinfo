@@ -1,0 +1,12 @@
+.example-container {
+    display:flex;
+    flex-direction: column;
+    width: 45%;
+    margin-left: 5%;
+    align-self:center;
+  }
+
+.sideimg{
+    width: 75%;
+    align-self: flex-start;
+}

@@ -1,0 +1,26 @@
+{
+  "Customers": [
+    {
+      "cid": "CUS-101",
+      "cname": "Raja",
+      "catagory": "Bussiness",
+      "salesrep": "Ramu",
+      "status": "onprocess",
+      "tag": "Apptivo-App",
+      "describ": "Allways Positive",
+      "address": "18,velan street,madurai",
+      "id": 1
+    },
+    {
+      "cid": "uih",
+      "cname": "ijpijpi",
+      "catagory": "iij",
+      "salesrep": "mkmkpk",
+      "status": "kmmk",
+      "tag": "lm",
+      "describ": "mokk",
+      "address": "lkok[p",
+      "id": 2
+    }
+  ]
+}

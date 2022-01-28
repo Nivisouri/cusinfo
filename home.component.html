@@ -1,0 +1,48 @@
+<app-header></app-header>
+<mat-grid-list cols="4" rowHeight="100px">
+ 
+ <mat-grid-tile 
+[colspan]="1"
+[rowspan]="1"
+[style.background]="lightblue">
+
+  <mat-grid-list cols="2" >
+    <mat-grid-tile 
+    [colspan]="1"
+    [rowspan]="1"
+    [style.background]="lightblue">
+  <img mat-card-image src="../../assets/customerc.png">
+</mat-grid-tile> <mat-grid-tile 
+[colspan]="1"
+[rowspan]="1"
+[style.background]="lightblue"><b>Customer</b>
+</mat-grid-tile>
+</mat-grid-list>
+
+</mat-grid-tile>
+
+<mat-grid-tile 
+[colspan]="1"
+[rowspan]="1"
+[style.background]="lightblue">
+  <b>Completing Project</b>
+
+</mat-grid-tile>
+<mat-grid-tile 
+[colspan]="1"
+[rowspan]="1"
+[style.background]="lightblue">
+  <b>Completing Project</b>
+</mat-grid-tile>
+<mat-grid-tile     
+[colspan]="1"
+[rowspan]="4"
+[style.background]="blue">
+<div style="width: 100%;">
+Customer By Catogory
+
+<app-piechart></app-piechart>
+</div>
+</mat-grid-tile>
+
+</mat-grid-list>
