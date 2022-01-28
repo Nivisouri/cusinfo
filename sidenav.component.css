@@ -1,0 +1,26 @@
+
+ a:link,a:visited{
+    
+    color: white;
+    padding: 10px 25px;
+    text-decoration: none;
+    display: inline-block;
+    min-height: 30px;
+}
+a:hover,a:active{
+    background-color: white;
+    min-height: 30px;
+    color: rgb(5, 168, 218);
+    width: 100%;
+}
+nav{
+    border: 1px solid rgb(5, 168, 218);
+    background-color: rgb(5, 168, 218);
+    width: 100%;
+
+    text-size-adjust: 25px;
+    
+}
+a{
+    font-size: 100%;
+}

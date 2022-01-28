@@ -1,0 +1,74 @@
+<mat-card class="example-card">
+  <mat-card-header>
+    <mat-card-title style="color: rgb(110, 163, 241);">Create New Customer Information</mat-card-title>
+   
+  </mat-card-header>
+<div class="mat-dialog-content" >
+<mat-form-field style=" width: 35%;" appearance="standard">
+  <mat-label><mat-icon>perm_identity</mat-icon>Customer Id</mat-label>
+  <input matInput [(ngModel)]="cid" placeholder="Customer Id" [formControl]="cidn" required>
+  <mat-error *ngIf="cidn.invalid">{{getErrorMessage()}}</mat-error>
+</mat-form-field>
+
+<mat-form-field style="margin-left: 5%;width: 35%;" appearance="standard">
+  <mat-label><mat-icon>account_circle</mat-icon>Customer Name</mat-label>
+  <input matInput [(ngModel)]="cname" placeholder="Customer Name"  [formControl]="cidname" required>
+  <mat-error *ngIf="cidname.invalid">{{getErrorMessage1()}}</mat-error>
+</mat-form-field>
+
+<mat-form-field style="width: 35%;" appearance="standard">
+  <mat-label><mat-icon>edit</mat-icon>Catagory</mat-label>
+  <input matInput [(ngModel)]="catagory" placeholder="Catagory" [formControl]="catagoryv" required>
+  <mat-error *ngIf="catagoryv.invalid">{{getErrorMessage2()}}</mat-error>
+
+</mat-form-field>
+
+<mat-form-field style="margin-left: 5%;width: 35%;" appearance="standard">
+  <mat-label><mat-icon>account_box</mat-icon>salesrep</mat-label>
+  <input matInput [(ngModel)]="salesrep" placeholder="salesrep" [formControl]="salesr" required>
+
+  <mat-error *ngIf="salesr.invalid">{{getErrorMessage2()}}</mat-error>
+
+
+</mat-form-field>
+
+<mat-form-field style="width: 35%;" appearance="standard">
+  <mat-label><mat-icon>subject</mat-icon>Status</mat-label>
+  <input matInput [(ngModel)]="status" placeholder="Status" [formControl]="state" required>
+  <mat-error *ngIf="state.invalid">{{getErrorMessage4()}}</mat-error>
+
+</mat-form-field>
+
+<mat-form-field style="margin-left: 5%;width: 35%;" appearance="standard">
+  <mat-label><mat-icon>loyalty</mat-icon>Tag</mat-label>
+  <input matInput [(ngModel)]="tag" placeholder="Tag" [formControl]="tg" required>
+  <mat-error *ngIf="tg.invalid">{{getErrorMessage5()}}</mat-error>
+</mat-form-field>
+
+<mat-form-field style="width: 35%;" appearance="standard">
+  <mat-label> <mat-icon>description</mat-icon> Describtion</mat-label>
+  <textarea matInput [(ngModel)]="describ" placeholder="Describtion" [formControl]="des" required>
+    <mat-error *ngIf="des.invalid">{{getErrorMessage6()}}</mat-error>
+  </textarea>
+</mat-form-field>
+
+<mat-form-field style="margin-left: 5%;width: 35%;" appearance="standard">
+  <mat-label><mat-icon>place</mat-icon>Address</mat-label>
+  <textarea matInput [(ngModel)]="address" placeholder="Address"[formControl]="add" required>
+    <mat-error *ngIf="add.invalid">{{getErrorMessage7()}}</mat-error>
+  </textarea>
+</mat-form-field>
+
+<mat-form-field  style="width: 35%;" appearance="standard">
+  <mat-label><mat-icon>today</mat-icon>Lastcontact</mat-label>
+  <input matInput [(ngModel)]="lastcontact" placeholder="Lastcontact">
+</mat-form-field>
+
+</div>
+
+<div mat-dialog-actions>
+  <button mat-raised-button style="background-color:red;color: white;" (click)="onClick()">cancel</button>
+  <button  mat-raised-button *ngIf="add.valid && des.valid && cidn.valid && cidname.valid && catagoryv.valid && salesr.valid && state.valid && tg.valid" style="background-color: rgb(5, 168, 218);color: white;" (click)="oncreate()">Ok</button>
+</div>
+</mat-card>
+

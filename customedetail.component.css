@@ -1,0 +1,27 @@
+table {
+    width: 100%;
+  }
+  
+  .mat-form-field {
+    font-size: 14px;
+    width: 25%;
+    margin-left: 63%;
+  }
+  .mat-table-sticky:first-child {
+    border-right: 1px solid #e0e0e0;
+  }
+  
+  .mat-table-sticky:last-child {
+    border-left: 1px solid #e0e0e0;
+  }
+  th{
+    color:white;
+    width: 15%;
+    background-color: rgb(85, 78, 78);
+  }
+  td ,th{
+    width: 15%;
+  }
+  th.mat-sort-header-sorted {
+    color: black;
+  }

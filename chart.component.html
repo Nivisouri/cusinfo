@@ -1,0 +1,44 @@
+
+
+<mat-drawer-container style="height: 100%;">
+  <mat-drawer mode="side" opened="true">
+    <app-sidenav></app-sidenav>
+  </mat-drawer>
+ <mat-drawer-content>
+   <app-header></app-header>
+   <router-outlet></router-outlet>
+
+<div class="example-cardm" style="display: flex;width: 100%;">
+  
+<mat-card class="example-card" style="width: 50%">
+  <mat-card-header>
+    <mat-card-title>Customer By Catagory</mat-card-title> 
+  </mat-card-header>
+  <hr>
+  <mat-card-content>
+<highcharts-chart
+   [Highcharts] = "highcharts" 
+   [options] = "chartOptions" 
+   style = "width: 100%; height: 400px; display: block;">
+</highcharts-chart>
+</mat-card-content>
+</mat-card>
+
+
+<mat-card class="example-card1" style="width: 30%;">
+  <mat-card-header>
+    <mat-card-title>Customer By Market </mat-card-title> 
+  </mat-card-header>
+  <hr>
+  <mat-card-content>
+<highcharts-chart
+   [Highcharts] = "highcharts1" 
+   [options] = "chartOptions1" 
+   style = "width: 100%; height: 400px; display: block;">
+</highcharts-chart>
+</mat-card-content>
+</mat-card>
+
+</div>
+</mat-drawer-content>
+</mat-drawer-container>
